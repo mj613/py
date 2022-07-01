@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        h1 {color: red}
+        p {color: blue}
+        </style>
+</head>
+<body>
+    <h1 id="title">my hello word</h1>
+    <p id="changetext">我写的第一个程序</p>    
+</body>
+
+<script>
+//这段代码修改了文字
+
+setTimeout("changeState()",3000 );  
+function changeState(){  
+    let content=document.getElementById('changetext');  
+    content.innerHTML="<div style='color:red'>千里之行，始于足下</div>";  
+}  
+    //1.打印5行星星
+    for(var i=0;i<5;i++){
+        for(var j=0;j<i+1;j++){
+            document.write('*')
+        }
+        document.write('<br>')
+    }
+    document.write('<br>')
+</script>
+</html>
+
+
